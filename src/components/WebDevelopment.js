@@ -99,6 +99,19 @@ export default function LandingPage() {
                       build using
                       <strong> React.js</strong>, utilizing a REST API.
                     </Typography>
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                    >
+                      <a
+                        href="http://www.pixaviewer.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Live
+                      </a>
+                    </Typography>
                   </CardContent>
                 </CardActionArea>
               </Card>
@@ -142,6 +155,13 @@ export default function LandingPage() {
                       <strong> React.js</strong>, utilizing a REST APIfetching
                       from OpenWeatherMap API.
                     </Typography>
+                    <a
+                      href="http://www.findmycurrentweather.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Live
+                    </a>
                   </CardContent>
                 </CardActionArea>
               </Card>
