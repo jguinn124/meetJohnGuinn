@@ -1,4 +1,4 @@
-# Pixaviewer App
+# meetJohnGuinn.com
 
 **USAGE**
 
