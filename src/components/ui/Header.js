@@ -156,8 +156,6 @@ export default function Header(_props) {
       setValue(3);
     } else if (window.location.pathname === "/contact" && value !== 4) {
       setValue(4);
-    } else if (window.location.pathname === "/estimate" && value !== 5) {
-      setValue(5);
     }
 
     switch (window.location.pathname) {
