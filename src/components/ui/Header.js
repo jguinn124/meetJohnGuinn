@@ -147,15 +147,10 @@ export default function Header(_props) {
       setValue(0);
     } else if (window.location.pathname === "/webdevelopment" && value !== 1) {
       setValue(1);
-    } else if (
-      window.location.pathname === "/digitalmarketing" &&
-      value !== 2
-    ) {
+    } else if (window.location.pathname === "/about" && value !== 2) {
       setValue(2);
-    } else if (window.location.pathname === "/about" && value !== 3) {
+    } else if (window.location.pathname === "/contact" && value !== 3) {
       setValue(3);
-    } else if (window.location.pathname === "/contact" && value !== 4) {
-      setValue(4);
     }
 
     switch (window.location.pathname) {
@@ -170,21 +165,15 @@ export default function Header(_props) {
           setSelectedIndex(1);
         }
         break;
-      case "/digitalmarketing":
+      case "/resume":
         if (value !== 2) {
           setValue(2);
         }
         break;
 
-      case "/about":
+      case "/contact":
         if (value !== 3) {
           setValue(3);
-        }
-        break;
-
-      case "/contact":
-        if (value !== 4) {
-          setValue(4);
         }
         break;
       default:
@@ -206,18 +195,12 @@ export default function Header(_props) {
           className={classes.tab}
           component={Link}
           to="/webdevelopment"
-          label="Web Development Portfolio"
+          label="Portfolio"
         />
         <Tab
           className={classes.tab}
           component={Link}
-          to="/digitalmarketing"
-          label="Digital Marketing"
-        />
-        <Tab
-          className={classes.tab}
-          component={Link}
-          to="/about"
+          to="/resume"
           label="About Us"
         />
         <Tab
@@ -301,21 +284,6 @@ export default function Header(_props) {
           <ListItem
             onClick={() => {
               setOpenDrawer(false);
-              setValue(2);
-            }}
-            divider
-            button
-            component={Link}
-            to="/digitalmarketing"
-            selected={value === 2}
-          >
-            <ListItemText className={classes.drawerItem} disableTypography>
-              Digital Marketing
-            </ListItemText>
-          </ListItem>
-          <ListItem
-            onClick={() => {
-              setOpenDrawer(false);
               setValue(3);
             }}
             divider
@@ -336,11 +304,11 @@ export default function Header(_props) {
             divider
             button
             component={Link}
-            to="/about"
+            to="/resume"
             selected={value === 4}
           >
             <ListItemText className={classes.drawerItem} disableTypography>
-              About Us
+              Resume
             </ListItemText>
           </ListItem>
         </List>

@@ -22,8 +22,7 @@ function App() {
             path="/webdevelopment"
             component={WebDevelopment}
           ></Route>
-          <Route exact path="/digitalmarketing" component={Marketing}></Route>
-          <Route exact path="/about" component={About}></Route>
+          <Route exact path="/resume" component={About}></Route>
           <Route exact path="/contact" component={Contact}></Route>
         </Switch>
         <Footer />

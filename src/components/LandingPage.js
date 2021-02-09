@@ -3,26 +3,20 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import SimpleLineChart from "../components/SimpleLineChart";
 import { Link } from "react-router-dom";
-import ReactPlayer from "react-player";
 import "./fonts.css";
 
 //images
-import webDesign from "../assets/web-design-temp.png";
-import facebookLogo from "../assets/Facebook-Logo.jpeg";
-import video from "../assets/video.mp4";
+import image from "../assets/undraw_Success_factors_re_ce93.svg";
 
-//Card
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
   content: {
     maxWidth: "500px",
+    fontFamily: "Arial",
+  },
+  maincontent: {
+    maxWidth: "700px",
     fontFamily: "Arial",
   },
   root: {
@@ -59,102 +53,38 @@ export default function LandingPage() {
       <Grid container justify="center">
         <Grid item>
           <Grid container justify="center" direction="row">
-            <Grid container justify="center">
-              <Grid item>
-                <div
-                  style={{
-                    position: "absolute",
-                    paddingLeft: "8rem",
-                    paddingTop: "8rem",
-                  }}
-                >
-                  <div
-                    className={classes.call}
-                    style={{
-                      fontFamily: "Libre Baskerville",
-                      padding: "20px",
-                      backgroundColor: "white",
-                      color: "#0E0E52",
-                    }}
-                  >
-                    Grow Your Business With Us
-                  </div>
-                </div>
-                <ReactPlayer
-                  className="react-player"
-                  url={video}
-                  width="100%"
-                  height="100%"
-                  playing="true"
-                  loop="true"
-                  muted
-                />
+            <Grid container justify="center" style={{ paddingTop: "80px" }}>
+              <Grid item style={{ paddingTop: "35px" }}>
+                <Typography variant="h2">Welcome</Typography>
+              </Grid>
+              <Grid item style={{ paddingLeft: "40px" }}>
+                <img src={image} width="200" height="200" />
               </Grid>
             </Grid>
-            <Grid item className={classes.control}>
-              <div>
-                <Card className={classes.root}>
-                  <CardActionArea>
-                    <CardMedia
-                      className={classes.media}
-                      image={webDesign}
-                      title="Contemplative Reptile"
-                      component={Link}
-                      to="/webdevelopment"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
-                        We Can Build a Beautiful Website for Your Business!
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        color="textSecondary"
-                        component="p"
-                      >
-                        We are able to build a website exactly tailored to your
-                        business. Give us a call to get a quote.
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button
-                      size="small"
-                      color="primary"
-                      component={Link}
-                      to="/webdevelopment"
-                    >
-                      Learn More
-                    </Button>
-                  </CardActions>
-                </Card>
-              </div>
+          </Grid>
+          <Grid container justify="center" style={{ paddingTop: "80px" }}>
+            <Grid item style={{ paddingTop: "35px" }}>
+              <Typography variant="h5">Summary</Typography>
             </Grid>
-            <Grid item className={classes.control}>
-              <Card className={classes.root}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    image={facebookLogo}
-                    title="Contemplative Reptile"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Let us Help you build your Brand and reach a New audience!
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
-                      Our team of Online Advertising Experts is able to help you
-                      reach consumers in many ways to grow your sales.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>
+          </Grid>
+          <Grid container justify="center" style={{ paddingTop: "20px" }}>
+            <Grid item className={classes.maincontent}>
+              <Typography variant="p5">
+                My name is John Guinn. I am a budding web developer and here you
+                can take a look at some of my projects. I am a proponent of
+                simplistic design and I have been building web applications ever
+                since I was in middle school, I am someone that sees web
+                development as a means for business productivitiy.
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid container justify="center" style={{ paddingTop: "20px" }}>
+            <Grid item className={classes.maincontent}>
+              <Typography variant="p5">
+                Here you will find projects I like to work on in my free time.
+                If you are looking for my resume it is under navigation. My
+                resume will have more information on each project.
+              </Typography>
             </Grid>
           </Grid>
           <Grid
@@ -173,10 +103,6 @@ export default function LandingPage() {
                 entertain themselves. Explore the patterns and trends shaping
                 the social media landscape over the past decade in the chart
                 shown.
-              </p>
-              <p className={classes.content}>
-                With the help of our team we can help you connect this new
-                market to your products.
               </p>
               <i>According to Pew Research Center</i>
             </Grid>
