@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import SimpleLineChart from "../components/SimpleLineChart";
 import "./fonts.css";
 
 //images
@@ -15,8 +14,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Arial",
   },
   maincontent: {
-    maxWidth: "700px",
+    maxWidth: "800px",
     fontFamily: "Arial",
+    [theme.breakpoints.down("md")]: {
+      maxWidth: "30em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: "25em",
+    },
   },
   root: {
     maxWidth: "30rem",
@@ -49,15 +54,15 @@ export default function LandingPage() {
 
   return (
     <Grid>
-      <Grid container justify="center">
+      <Grid container justify="center" style={{ paddingBottom: "200px" }}>
         <Grid item>
           <Grid container justify="center" direction="row">
             <Grid container justify="center" style={{ paddingTop: "80px" }}>
-              <Grid item style={{ paddingTop: "35px" }}>
+              <Grid item style={{ paddingTop: "70px" }}>
                 <Typography variant="h2">Welcome</Typography>
               </Grid>
-              <Grid item style={{ paddingLeft: "40px" }}>
-                <img src={image} alt="Welcome" width="200" height="200" />
+              <Grid item style={{ paddingLeft: "80px" }}>
+                <img src={image} alt="Welcome" width="300" height="300" />
               </Grid>
             </Grid>
           </Grid>
@@ -85,29 +90,6 @@ export default function LandingPage() {
                 If you are looking for my resume it is under navigation. My
                 resume will have more information on each project.
               </Typography>
-            </Grid>
-          </Grid>
-          <Grid
-            container
-            className={classes.group}
-            direction="row"
-            justify="center"
-          >
-            <Grid item className={classes.control}>
-              <h3 className={classes.content}>
-                More Consumers are Online and Social Media is Bigger than ever!
-              </h3>
-              <p className={classes.content}>
-                Today around 7 in 10 Americans use social media to connect with
-                one another, engage with news content, share information and
-                entertain themselves. Explore the patterns and trends shaping
-                the social media landscape over the past decade in the chart
-                shown.
-              </p>
-              <i>According to Pew Research Center</i>
-            </Grid>
-            <Grid item>
-              <SimpleLineChart />
             </Grid>
           </Grid>
         </Grid>
