@@ -147,7 +147,7 @@ export default function Header(_props) {
       setValue(0);
     } else if (window.location.pathname === "/webdevelopment" && value !== 1) {
       setValue(1);
-    } else if (window.location.pathname === "/about" && value !== 2) {
+    } else if (window.location.pathname === "/resume" && value !== 2) {
       setValue(2);
     } else if (window.location.pathname === "/contact" && value !== 3) {
       setValue(3);
@@ -201,7 +201,7 @@ export default function Header(_props) {
           className={classes.tab}
           component={Link}
           to="/resume"
-          label="About Us"
+          label="Resume"
         />
         <Tab
           className={classes.tab}

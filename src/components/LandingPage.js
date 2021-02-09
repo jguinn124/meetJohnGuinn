@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import SimpleLineChart from "../components/SimpleLineChart";
-import { Link } from "react-router-dom";
 import "./fonts.css";
 
 //images
@@ -58,7 +57,7 @@ export default function LandingPage() {
                 <Typography variant="h2">Welcome</Typography>
               </Grid>
               <Grid item style={{ paddingLeft: "40px" }}>
-                <img src={image} width="200" height="200" />
+                <img src={image} alt="Welcome" width="200" height="200" />
               </Grid>
             </Grid>
           </Grid>
