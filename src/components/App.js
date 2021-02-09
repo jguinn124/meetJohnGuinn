@@ -6,7 +6,6 @@ import Header from "./ui/Header";
 import Footer from "../components/ui/Footer";
 import LandingPage from "../components/LandingPage";
 import WebDevelopment from "../components/WebDevelopment";
-import Marketing from "../components/Marketing";
 import About from "./About";
 import Contact from "./Contact";
 
