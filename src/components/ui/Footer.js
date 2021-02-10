@@ -80,20 +80,12 @@ export default function Footer() {
               >
                 Web Development
               </Grid>
-              <Grid
-                item
-                component={Link}
-                to="/digitalmarketing"
-                className={classes.link}
-              >
-                Digital Marketing
-              </Grid>
             </Grid>
           </Grid>
           <Grid item className={classes.gridItem}>
             <Grid container direction="column" spacing={2}>
-              <Grid item component={Link} to="/about" className={classes.link}>
-                About Us
+              <Grid item component={Link} to="/resume" className={classes.link}>
+                Resume
               </Grid>
               <Grid
                 item
