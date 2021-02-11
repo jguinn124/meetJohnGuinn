@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
+import { Grid, Card } from "@material-ui/core";
 import "./fonts.css";
 
 //images
@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
   content: {
     maxWidth: "500px",
     fontFamily: "Arial",
+  },
+  card: {
+    padding: "30px",
   },
   maincontent: {
     maxWidth: "800px",
@@ -71,27 +74,29 @@ export default function LandingPage() {
               <Typography variant="h5">Summary</Typography>
             </Grid>
           </Grid>
-          <Grid container justify="center" style={{ paddingTop: "20px" }}>
-            <Grid item className={classes.maincontent}>
-              <Typography variant="p5">
-                My name is John Guinn. I am a budding web developer and here you
-                can take a look at some of my projects. I am a proponent of
-                simplistic design and I have been building web applications ever
-                since I was in middle school, I am someone that sees web
-                development as a means for business productivitiy and
-                accessibility.
-              </Typography>
+          <Card className={classes.card}>
+            <Grid container justify="center" style={{ paddingTop: "10px" }}>
+              <Grid item className={classes.maincontent}>
+                <Typography variant="p5">
+                  My name is John Guinn. I am a budding web developer and here
+                  you can take a look at some of my projects. I am a proponent
+                  of simplistic design and I have been building web applications
+                  ever since I was in middle school, I am someone that sees web
+                  development as a means for business productivitiy and
+                  accessibility.
+                </Typography>
+              </Grid>
             </Grid>
-          </Grid>
-          <Grid container justify="center" style={{ paddingTop: "20px" }}>
-            <Grid item className={classes.maincontent}>
-              <Typography variant="p5">
-                Here you will find projects I like to work on in my free time.
-                If you are looking for my resume it is under navigation. My
-                resume will have more information on each project.
-              </Typography>
+            <Grid container justify="center" style={{ paddingTop: "20px" }}>
+              <Grid item className={classes.maincontent}>
+                <Typography variant="p5">
+                  Here you will find projects I like to work on in my free time.
+                  If you are looking for my resume it is under navigation. My
+                  resume will have more information on each project.
+                </Typography>
+              </Grid>
             </Grid>
-          </Grid>
+          </Card>
         </Grid>
       </Grid>
     </Grid>
