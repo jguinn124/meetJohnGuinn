@@ -123,7 +123,9 @@ export default function LandingPage() {
                   paddingTop: "20px",
                 }}
               >
-                Text
+                A web application that allows purchases of with real time
+                ecommerce. Using Chec.io and Stripe API we are able to process
+                payments.
               </div>
             </Grid>
           </Grid>
