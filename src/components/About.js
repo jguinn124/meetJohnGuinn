@@ -56,7 +56,52 @@ export default function LandingPage() {
                   color: "#0E0E52",
                 }}
               >
-                Under Construction
+                Resume
+              </div>
+              <div
+                style={{
+                  fontFamily: "Libre Baskerville",
+                  fontSize: "40px",
+                  backgroundColor: "white",
+                  color: "#0E0E52",
+                  paddingTop: "50px",
+                }}
+              >
+                Education
+              </div>
+              <div
+                style={{
+                  fontFamily: "Libre Baskerville",
+                  fontSize: "30px",
+                  backgroundColor: "white",
+                  color: "#0E0E52",
+                  paddingTop: "20px",
+                }}
+              >
+                Bachelor of Science in Computer Science
+              </div>
+              <div
+                style={{
+                  fontFamily: "Libre Baskerville",
+                  fontSize: "30px",
+                  backgroundColor: "white",
+                  color: "#0E0E52",
+                  paddingTop: "20px",
+                  color: "#800000",
+                }}
+              >
+                Missouri State University 2019
+              </div>
+              <div
+                style={{
+                  fontFamily: "Libre Baskerville",
+                  fontSize: "40px",
+                  backgroundColor: "white",
+                  color: "#0E0E52",
+                  paddingTop: "50px",
+                }}
+              >
+                Projects
               </div>
             </Grid>
           </Grid>
