@@ -103,6 +103,28 @@ export default function LandingPage() {
               >
                 Projects
               </div>
+              <div
+                style={{
+                  fontFamily: "Libre Baskerville",
+                  fontSize: "40px",
+                  backgroundColor: "white",
+                  color: "#0E0E52",
+                  paddingTop: "20px",
+                }}
+              >
+                Functional Ecommerce Application
+              </div>
+              <div
+                style={{
+                  fontFamily: "Libre Baskerville",
+                  fontSize: "20px",
+                  backgroundColor: "white",
+                  color: "#0E0E52",
+                  paddingTop: "20px",
+                }}
+              >
+                Text
+              </div>
             </Grid>
           </Grid>
         </Grid>
