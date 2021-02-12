@@ -5,6 +5,7 @@ import "./fonts.css";
 
 //images
 import image from "../assets/undraw_Success_factors_re_ce93.svg";
+import blob from "../assets/matching_blob.png";
 
 import Typography from "@material-ui/core/Typography";
 
@@ -57,6 +58,13 @@ export default function LandingPage() {
 
   return (
     <Grid>
+      {/* Not sure if I want this added  
+      <img
+        src={blob}
+        style={{ position: "absolute", width: "20vw", paddingTop: "400px" }}
+      />
+
+      */}
       <Grid container justify="center" style={{ paddingBottom: "200px" }}>
         <Grid item>
           <Grid container justify="center" direction="row">

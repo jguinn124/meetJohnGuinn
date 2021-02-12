@@ -71,7 +71,7 @@ export default function LandingPage() {
           <Grid container justify="center">
             <Grid item style={{ padding: "15px" }}>
               <a
-                href="http://www.pixaviewer.com"
+                href="https://xenodochial-mestorf-66658d.netlify.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -100,10 +100,9 @@ export default function LandingPage() {
                         color="textSecondary"
                         component="p"
                       >
-                        A web application that allows you to search for pictures
-                        from <strong> Pixabay.com</strong>. This application is
-                        build using
-                        <strong> React.js</strong>, utilizing a REST API.
+                        A web application that allows purchases of with real
+                        time ecommerce. Using Chec.io and Stripe API we are able
+                        to process payments.
                       </Typography>
                       <Typography
                         variant="body2"
@@ -205,7 +204,6 @@ export default function LandingPage() {
                         <strong> React.js</strong>, utilizing a REST APIfetching
                         from OpenWeatherMap API.
                       </Typography>
-                      Live
                     </CardContent>
                   </CardActionArea>
                 </Card>
