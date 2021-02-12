@@ -1,6 +1,7 @@
 import React from "react";
 import "./fonts.css";
 import pixaviewer from "../assets/Pixaviewer.png";
+import ecommerce from "../assets/frontend_demo.png";
 import weather from "../assets/weather.png";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -69,102 +70,146 @@ export default function LandingPage() {
         >
           <Grid container justify="center">
             <Grid item style={{ padding: "15px" }}>
-              <Card className={classes.root} boxShadow={3}>
-                <CardActionArea>
-                  <div
-                    style={{
-                      position: "absolute",
-                      padding: "10px",
-                      paddingLeft: "40px",
-                    }}
-                  >
-                    <h1
-                      className={classes.title}
+              <a
+                href="http://www.pixaviewer.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Card className={classes.root} boxShadow={3}>
+                  <CardActionArea>
+                    <div
                       style={{
-                        fontFamily: "Libre Baskerville",
+                        position: "absolute",
+                        padding: "10px",
+                        paddingLeft: "40px",
                       }}
                     >
-                      PixaViewer.com
-                    </h1>
-                  </div>
-                  <CardMedia className={classes.media} image={pixaviewer} />
-                  <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
-                      A web application that allows you to search for pictures
-                      from <strong> Pixabay.com</strong>. This application is
-                      build using
-                      <strong> React.js</strong>, utilizing a REST API.
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
-                      <a
-                        href="http://www.pixaviewer.com"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                      <h1
+                        className={classes.title}
+                        style={{
+                          fontFamily: "Libre Baskerville",
+                        }}
                       >
-                        Live
-                      </a>
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+                        Ecommerce Demo
+                      </h1>
+                    </div>
+                    <CardMedia className={classes.media} image={ecommerce} />
+                    <CardContent>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        component="p"
+                      >
+                        A web application that allows you to search for pictures
+                        from <strong> Pixabay.com</strong>. This application is
+                        build using
+                        <strong> React.js</strong>, utilizing a REST API.
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        component="p"
+                      ></Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </a>
             </Grid>
             <Grid item style={{ padding: "15px" }}>
-              <Card className={classes.root} boxShadow={3}>
-                <CardActionArea>
-                  <div
-                    style={{
-                      position: "absolute",
-                      padding: "10px",
-                      paddingLeft: "40px",
-                    }}
-                  >
-                    <h1
-                      className={classes.weaTitle}
+              <a
+                href="http://www.pixaviewer.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Card className={classes.root} boxShadow={3}>
+                  <CardActionArea>
+                    <div
                       style={{
-                        fontFamily: "Libre Baskerville",
+                        position: "absolute",
+                        padding: "10px",
+                        paddingLeft: "40px",
                       }}
                     >
-                      FindMyCurrentWeather.com
-                    </h1>
-                  </div>
-                  <CardMedia className={classes.media} image={weather} />
-                  <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
+                      <h1
+                        className={classes.title}
+                        style={{
+                          fontFamily: "Libre Baskerville",
+                        }}
+                      >
+                        PixaViewer.com
+                      </h1>
+                    </div>
+                    <CardMedia className={classes.media} image={pixaviewer} />
+                    <CardContent>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        component="p"
+                      >
+                        A web application that allows you to search for pictures
+                        from <strong> Pixabay.com</strong>. This application is
+                        build using
+                        <strong> React.js</strong>, utilizing a REST API.
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        component="p"
+                      ></Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </a>
+            </Grid>
+            <Grid item style={{ padding: "15px" }}>
+              <a
+                href="http://www.findmycurrentweather.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Card className={classes.root} boxShadow={3}>
+                  <CardActionArea>
+                    <div
+                      style={{
+                        position: "absolute",
+                        padding: "10px",
+                        paddingLeft: "40px",
+                      }}
                     >
-                      A web application that allows you to search for weather.
-                      Query must be exact. An auto complete function is also
-                      used to fix UI.
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
-                      This application is build using
-                      <strong> React.js</strong>, utilizing a REST APIfetching
-                      from OpenWeatherMap API.
-                    </Typography>
-                    <a
-                      href="http://www.findmycurrentweather.com"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
+                      <h1
+                        className={classes.weaTitle}
+                        style={{
+                          fontFamily: "Libre Baskerville",
+                        }}
+                      >
+                        FindMyCurrentWeather.com
+                      </h1>
+                    </div>
+                    <CardMedia className={classes.media} image={weather} />
+                    <CardContent>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        component="p"
+                      >
+                        A web application that allows you to search for weather.
+                        Query must be exact. An auto complete function is also
+                        used to fix UI.
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        component="p"
+                      >
+                        This application is build using
+                        <strong> React.js</strong>, utilizing a REST APIfetching
+                        from OpenWeatherMap API.
+                      </Typography>
                       Live
-                    </a>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </a>
             </Grid>
           </Grid>
         </Grid>
