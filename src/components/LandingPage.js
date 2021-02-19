@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Card } from "@material-ui/core";
+import { positions } from "@material-ui/system";
+
 import "./fonts.css";
 
 //images
@@ -16,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     padding: "30px",
+    zIndex: 100,
   },
   maincontent: {
     maxWidth: "800px",
@@ -58,19 +61,30 @@ export default function LandingPage() {
 
   return (
     <Grid>
-      {/* Not sure if I want this added  
+      {/* 
       <img
         src={blob}
-        style={{ position: "absolute", width: "20vw", paddingTop: "400px" }}
+        style={{
+          position: "absolute",
+          width: "300px",
+          paddingTop: "300px",
+        }}
       />
-
       */}
-      <Grid container justify="center" style={{ paddingBottom: "200px" }}>
+
+      <Grid
+        container
+        justify="center"
+        style={{
+          paddingBottom: "200px",
+          backgroundColor: "#edeef5",
+        }}
+      >
         <Grid item>
           <Grid container justify="center" direction="row">
             <Grid container justify="center" style={{ paddingTop: "80px" }}>
               <Grid item style={{ paddingTop: "70px" }}>
-                <Typography variant="h2">Welcome</Typography>
+                <Typography variant="h1">Welcome</Typography>
               </Grid>
               <Grid item style={{ paddingLeft: "80px" }}>
                 <img src={image} alt="Welcome" width="300" height="300" />
@@ -78,14 +92,14 @@ export default function LandingPage() {
             </Grid>
           </Grid>
           <Grid container justify="center" style={{ paddingTop: "80px" }}>
-            <Grid item style={{ paddingTop: "35px" }}>
-              <Typography variant="h5">Summary</Typography>
+            <Grid item style={{ paddingTop: "35px", paddingBottom: "20px" }}>
+              <Typography variant="h3">Summary</Typography>
             </Grid>
           </Grid>
           <Card className={classes.card}>
             <Grid container justify="center" style={{ paddingTop: "10px" }}>
               <Grid item className={classes.maincontent}>
-                <Typography variant="p5">
+                <Typography variant="h6">
                   My name is John Guinn. I am a budding web developer and here
                   you can take a look at some of my projects. I am a proponent
                   of simplistic design and I have been building web applications
@@ -97,7 +111,7 @@ export default function LandingPage() {
             </Grid>
             <Grid container justify="center" style={{ paddingTop: "20px" }}>
               <Grid item className={classes.maincontent}>
-                <Typography variant="p5">
+                <Typography variant="h6">
                   Here you will find projects I like to work on in my free time.
                   If you are looking for my resume it is under navigation. My
                   resume will have more information on each project.
