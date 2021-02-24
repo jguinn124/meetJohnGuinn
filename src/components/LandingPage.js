@@ -104,7 +104,7 @@ export default function LandingPage() {
                   you can take a look at some of my projects. I am a proponent
                   of simplistic design and I have been building web applications
                   ever since I was in middle school, I am someone that sees web
-                  development as a means for business productivitiy and
+                  development as a means for business productivity and
                   accessibility.
                 </Typography>
               </Grid>
