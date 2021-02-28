@@ -54,6 +54,11 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "25px",
     },
   },
+  welcome: {
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "50px",
+    },
+  },
 }));
 
 export default function LandingPage() {
@@ -84,7 +89,9 @@ export default function LandingPage() {
           <Grid container justify="center" direction="row">
             <Grid container justify="center" style={{ paddingTop: "80px" }}>
               <Grid item style={{ paddingTop: "70px" }}>
-                <Typography variant="h1">Welcome</Typography>
+                <Typography className={classes.welcome} variant="h1">
+                  Welcome
+                </Typography>
               </Grid>
               <Grid item style={{ paddingLeft: "80px" }}>
                 <img src={image} alt="Welcome" width="300" height="300" />
