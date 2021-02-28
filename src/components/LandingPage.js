@@ -57,12 +57,14 @@ const useStyles = makeStyles((theme) => ({
   welcome: {
     [theme.breakpoints.down("xs")]: {
       fontSize: "60px",
+      paddingBottom: "40px",
     },
   },
   welcome_img: {
     [theme.breakpoints.down("xs")]: {
       height: "150px",
-      padding: "10px",
+      padding: "30px",
+      paddingLeft: "0px",
     },
   },
 }));
