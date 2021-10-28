@@ -127,17 +127,6 @@ export default function LandingPage() {
                 ecommerce. Using Chec.io and Stripe API we are able to process
                 payments.
               </div>
-              <div
-                style={{
-                  fontFamily: "Libre Baskerville",
-                  fontSize: "40px",
-                  backgroundColor: "white",
-                  color: "#0E0E52",
-                  paddingTop: "40px",
-                }}
-              >
-                Hair Salon Booking Application (Coming March 2021)
-              </div>
             </Grid>
           </Grid>
         </Grid>
